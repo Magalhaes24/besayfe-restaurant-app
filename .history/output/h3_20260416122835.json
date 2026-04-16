@@ -1,0 +1,945 @@
+{
+  "total_dishes": 43,
+  "dishes": [
+    {
+      "name": "Grelhado",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Limão",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Com molho",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho h3"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Tuga",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho tuga",
+        "Ovo estrelado"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Dente de alho",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Louro",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Champignon",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho champignon"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Cheese",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho de queijo",
+        "Cebola salteada",
+        "Ketchup"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Maionese mostarda antiga",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Med",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Rúcula",
+        "Parmesão",
+        "Tomate seco",
+        "Molho de azeite e limão"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Carbonara",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho carbonara",
+        "Bacon aos cubos",
+        "Parmesão",
+        "Ovo estrelado",
+        "Cebolinho"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Benedict",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Espinafres salteados",
+        "Molho holandês",
+        "Ovo escalfado"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "French",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Escalope de foie gras",
+        "Cebola confitada",
+        "Redução de vinho do Porto"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Superbread",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Pão focaccia",
+        "Hambúrguer",
+        "Alface, tomate e cebola roxa"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Maionese mostarda antiga",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Ketchup"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Grelhado no pão",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Pão h3",
+        "Ketchup"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Maionese mostarda antiga",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Alface, tomate e cebola roxa",
+        "Hambúrguer"
+      ],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Tuga no pão",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Pão h3",
+        "Alface e tomate",
+        "Hambúrguer",
+        "Molho tuga",
+        "Ovo estrelado"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Med no pão",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Pão h3"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Maionese mostarda antiga",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho de azeite e limão",
+        "Rúcula",
+        "Parmesão",
+        "Tomate seco"
+      ],
+      "contains_allergens": [
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Carbonara no pão",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Pão h3",
+        "Alface e tomate",
+        "Hambúrguer",
+        "Molho carbonara",
+        "Ovo estrelado",
+        "Bacon aos cubos",
+        "Parmesão",
+        "Cebolinho"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Cheese no pão",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Pão h3",
+        "Alface e tomate",
+        "Ketchup"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Maionese mostarda antiga",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho de queijo",
+        "Cebola salteada"
+      ],
+      "contains_allergens": [
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Cheese Bacon no pão",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Pão h3",
+        "Alface e tomate",
+        "Ketchup"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        },
+        {
+          "key": "lupin",
+          "name_pt": "Tremoço",
+          "name_en": "Lupin",
+          "detail": null
+        },
+        {
+          "key": "molluscs",
+          "name_pt": "Moluscos",
+          "name_en": "Molluscs",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Maionese mostarda antiga",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho de queijo",
+        "Cebola salteada",
+        "Bacon aos cubos"
+      ],
+      "contains_allergens": [
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Benedict no pão",
+      "category": "Menus No Pão",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Pão h3",
+        "Espinafres salteados",
+        "Molho holandês",
+        "Hambúrguer"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Pica-Pau (Refresh)",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho Pica-Pau",
+        "Mix de pickles e azeitonas"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        },
+        {
+          "key": "molluscs",
+          "name_pt": "Moluscos",
+          "name_en": "Molluscs",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Croquetes*",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Croquetes de carne",
+        "Espinafres salteados",
+        "Ovo estrelado",
+        "Molho de iogurte",
+        "Mostarda amarela"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Salada BLT*",
+      "category": "Menus",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Alface e tomate",
+        "Ovo escalfado",
+        "Bacon",
+        "Molho de iogurte",
+        "Vinagreta h3",
+        "Crocante de cebola"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Arroz Thai",
+      "category": "Acompanhamentos",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Batatas"
+      ],
+      "contains_allergens": [
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Salada c/ vinagreta h3",
+      "category": "Acompanhamentos",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [
+        "Alface, tomate e cebola roxa",
+        "Vinagreta h3",
+        "Esparregado",
+        "Pão de Mafra"
+      ],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Limonadas",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Limonada de limão",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Limonada de morango",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Limonada de maracujá",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Limonada de romã",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chás",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chá preto",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chá de limão",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Outras",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Cerveja",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Vinho",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "*Exclusivo nos restaurantes do Cais Sodré,",
+      "category": "Bebidas",
+      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    }
+  ]
+}

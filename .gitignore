@@ -1,0 +1,38 @@
+# Dependencies
+backend/node_modules
+app/node_modules
+*.egg-info
+__pycache__
+.Python
+*.pyc
+*.pyo
+*.pyd
+
+# Backend
+backend/.venv
+backend/venv
+backend/output/allergens.db
+
+# Expo / React Native
+app/.expo
+app/.expo-shared
+app/dist
+app/build
+app/.env
+app/.env.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project
+.env
+.env.local
+.env.*.local

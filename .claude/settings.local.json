@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python normalizer.py \"tables-test/5-vp-alergenios-balcao-07-abr_2026.pdf\" --json-name \"mcdonalds.json\" --db-name \"mcdonalds.db\")",
+      "Bash(python -)",
+      "Bash(python -c ' *)",
+      "Bash(python normalizer.py \"tables-test/vira_alergenios.pdf\" --json-name \"vira.json\" --db-name \"vira.db\")",
+      "Bash(python normalizer.py \"tables-test/tabela_alergenios_h3.pdf\" --json-name \"h3.json\" --db-name \"h3.db\")",
+      "Bash(python normalizer.py \"tables-test/5-vp-alergenios-balcao-07-abr_2026.pdf\" --json-name \"dishes.json\" --db-name \"allergens.db\")",
+      "Bash(python normalizer.py \"tables-test/tabela_alergenios_h3.pdf\")",
+      "Bash(python normalizer.py \"tables-test/vira_alergenios.pdf\")",
+      "Bash(python -c \"from parsers.interactive_parser import parse_interactive; print\\('import OK'\\)\")",
+      "Bash(python -c \"from parsers.xlsx_parser import parse_xlsx; print\\('xlsx OK'\\)\")",
+      "Bash(python -c \"from parsers.csv_parser import parse_csv; print\\('csv OK'\\)\")",
+      "Bash(python normalizer.py --help)",
+      "Bash(python normalizer.py \"tables-test/vira_alergenios.pdf\" --restaurant-name \"Vira\" --no-db)",
+      "Bash(python normalizer.py \"tables-test/vira_alergenios.pdf\" --restaurant-name \"Vira\" --no-json)",
+      "Bash(mkdir -p backend/parsers)",
+      "Bash(cp normalizer.py models.py db.py requirements.txt backend/)",
+      "Bash(cp parsers/__init__.py parsers/pdf_parser.py parsers/xlsx_parser.py parsers/csv_parser.py parsers/interactive_parser.py backend/parsers/)",
+      "Bash(cp -r tables-test backend/tables-test)",
+      "Bash(cp -r output backend/output)",
+      "Bash(npx create-expo-app@latest app --template blank-typescript)",
+      "Bash(npx expo *)"
+    ]
+  }
+}
