@@ -14,6 +14,9 @@ The output structure is: **Restaurant → Dishes → Ingredients + Allergens (co
 
 ```
 normalizer/
+├── .claude/                    
+│   ├── BRAND_IDENTITY.md                      
+│   ├── settings.local.json
 ├── MEMORY.md                   # This file
 ├── backend/                    # Python backend (normalizer CLI)
 │   ├── normalizer.py           # Main entry point + CLI

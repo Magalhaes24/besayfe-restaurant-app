@@ -1,0 +1,457 @@
+{
+  "name": "McDonald's",
+  "source_file": "tabela_mcdonalds.pdf",
+  "total_dishes": 18,
+  "dishes": [
+    {
+      "name": "Hamburger",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Double Cheeseburger",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Big Mac®",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "McCrispy Original",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "McCrispy BBQ&Bacon",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "McCrispy Spicy Cajun",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "McVeggie",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Aveia,Trigo"
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Veggie Burger",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Aveia,Trigo"
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chicken Wings",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chicken McNuggets®",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chicken Share Box",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Molho Barbecue",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Molho Maionese com Alho",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Molho Agridoce",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chicken Bacon",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "McChicken®",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "CBO®",
+      "category": "Menu Principal / 1",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": "Trigo"
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    }
+  ]
+}

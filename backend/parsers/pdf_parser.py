@@ -409,41 +409,36 @@ _H3_SUBCOMPONENTS = {
 
 
 
-# H3 fixed column x-centers derived from empirical marker positions.
-# These are consistent across all 4 pages of the H3 PDF.
-# Order matches the 14 EU allergens as laid out in the H3 allergen table.
-#
-# Measured from the 'Molho Pica-Pau' row (densest row with 13/14 allergens):
-#   170 → gluten    198 → crustaceans  227 → eggs      255 → fish
-#   283 → peanuts   312 → soybeans     340 → milk       368 → nuts
-#   397 → celery    425 → mustard      453 → sesame     482 → sulphites
-#   510 → lupin     538 → molluscs
+# H3 allergen x-positions measured from actual C/PC marker words in data rows.
+# These are the real marker positions, NOT the legend label positions at the
+# bottom of each page. Formula: data_x = 125.4 + 0.769 * legend_x.
+# Verified against 'Tuga no pão' ground truth and dense 'Molho Pica-Pau' row.
 _H3_FIXED_X_MAP: Dict[float, str] = {
     170.0: "gluten",
-    198.0: "crustaceans",
+    199.0: "crustaceans",
     227.0: "eggs",
     255.0: "fish",
     283.0: "peanuts",
     312.0: "soybeans",
     340.0: "milk",
-    368.0: "nuts",
+    369.0: "nuts",
     397.0: "celery",
     425.0: "mustard",
     453.0: "sesame",
     482.0: "sulphites",
     510.0: "lupin",
-    538.0: "molluscs",
+    539.0: "molluscs",
 }
 
 
 def _build_h3_x_col_map(page: pdfplumber.page.Page) -> Dict[str, str]:
     """
-    Build a map: x_center → allergen_key for an H3 page.
+    Build a map: data_x_center → allergen_key for an H3 page.
 
-    Strategy:
-    1. Try to detect allergen header words in the bottom 15% of the page.
-       These may be fragmented (e.g. 'FRUTOS', 'DE', 'C.', 'RIJA' as separate tokens).
-    2. Fall back to the fixed empirical x-position map if fewer than 5 headers found.
+    The allergen labels appear as a legend at the BOTTOM of each page at
+    legend_x positions. The actual C/PC marker words in data rows appear at
+    different positions related by: data_x = 125.4 + 0.769 * legend_x.
+    Falls back to the fixed empirical map if fewer than 8 headers detected.
     """
     words = page.extract_words()
     if not words:
@@ -460,17 +455,16 @@ def _build_h3_x_col_map(page: pdfplumber.page.Page) -> Dict[str, str]:
 
     detected: Dict[float, str] = {}
     for w in header_words:
-        x_center = (w["x0"] + w["x1"]) / 2
+        legend_x = (w["x0"] + w["x1"]) / 2
         key = _resolve_header(w["text"])
         if key:
-            detected[x_center] = key
+            # Convert legend label position to actual data marker position
+            data_x = 125.4 + 0.769 * legend_x
+            detected[data_x] = key
 
-    # If we found at least 8 allergens from headers, use detected positions
-    # but supplement missing ones by rescaling from the fixed map.
     if len(detected) >= 8:
         return detected
 
-    # Otherwise use the fixed map (works for all 4 H3 pages empirically)
     return _H3_FIXED_X_MAP
 
 

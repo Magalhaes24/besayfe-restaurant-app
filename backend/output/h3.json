@@ -1,10 +1,11 @@
 {
-  "total_dishes": 42,
+  "name": "H3",
+  "source_file": "tabela_h3.pdf",
+  "total_dishes": 46,
   "dishes": [
     {
       "name": "Grelhado",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer"
       ],
@@ -21,7 +22,6 @@
     {
       "name": "Limão",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
@@ -29,7 +29,6 @@
     {
       "name": "Com molho",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer",
         "Molho h3"
@@ -47,7 +46,6 @@
     {
       "name": "Tuga",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer",
         "Molho tuga",
@@ -72,7 +70,6 @@
     {
       "name": "Dente de alho",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
@@ -80,7 +77,6 @@
     {
       "name": "Louro",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
@@ -88,7 +84,6 @@
     {
       "name": "Champignon",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer",
         "Molho champignon"
@@ -106,7 +101,6 @@
     {
       "name": "Cheese",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer",
         "Molho de queijo",
@@ -152,7 +146,6 @@
     {
       "name": "Med",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer",
         "Rúcula",
@@ -173,7 +166,6 @@
     {
       "name": "Carbonara",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer",
         "Molho carbonara",
@@ -201,7 +193,6 @@
     {
       "name": "Benedict",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer",
         "Espinafres salteados",
@@ -228,12 +219,8 @@
     {
       "name": "French",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
-        "Hambúrguer",
-        "Escalope de foie gras",
-        "Cebola confitada",
-        "Redução de vinho do Porto"
+        "Hambúrguer"
       ],
       "contains_allergens": [
         {
@@ -259,15 +246,48 @@
       ]
     },
     {
+      "name": "Escalope de foie gras",
+      "category": "Menus",
+      "ingredients": [
+        "Cebola confitada"
+      ],
+      "contains_allergens": [],
+      "may_contain_allergens": [
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Redução de vinho do Porto",
+      "category": "Menus",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
       "name": "Superbread",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Pão focaccia",
         "Hambúrguer",
         "Alface, tomate e cebola roxa",
-        "Maionese mostarda antiga",
-        "Ketchup"
+        "Maionese mostarda antiga"
       ],
       "contains_allergens": [
         {
@@ -295,7 +315,6 @@
     {
       "name": "Grelhado no pão",
       "category": "Menus No Pão",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Pão h3",
         "Ketchup",
@@ -329,7 +348,6 @@
     {
       "name": "Tuga no pão",
       "category": "Menus No Pão",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Pão h3",
         "Alface e tomate",
@@ -363,7 +381,6 @@
     {
       "name": "Med no pão",
       "category": "Menus No Pão",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Pão h3",
         "Maionese mostarda antiga",
@@ -399,7 +416,6 @@
     {
       "name": "Carbonara no pão",
       "category": "Menus No Pão",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Pão h3",
         "Alface e tomate",
@@ -436,7 +452,6 @@
     {
       "name": "Cheese no pão",
       "category": "Menus No Pão",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Pão h3",
         "Alface e tomate",
@@ -478,7 +493,6 @@
     {
       "name": "Cheese Bacon no pão",
       "category": "Menus No Pão",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Pão h3",
         "Alface e tomate",
@@ -533,12 +547,9 @@
     {
       "name": "Benedict no pão",
       "category": "Menus No Pão",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Pão h3",
-        "Espinafres salteados",
-        "Molho holandês",
-        "Hambúrguer"
+        "Espinafres salteados"
       ],
       "contains_allergens": [
         {
@@ -566,11 +577,9 @@
     {
       "name": "Pica-Pau (Refresh)",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Hambúrguer",
-        "Molho Pica-Pau",
-        "Mix de pickles e azeitonas"
+        "Molho Pica-Pau"
       ],
       "contains_allergens": [
         {
@@ -620,37 +629,16 @@
       ]
     },
     {
-      "name": "Croquetes*",
+      "name": "Mix de pickles e azeitonas",
       "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
+        "Croquetes*",
         "Croquetes de carne",
         "Espinafres salteados",
         "Ovo estrelado",
         "Molho de iogurte",
-        "Mostarda amarela"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Salada BLT*",
-      "category": "Menus",
-      "source_file": "tabela_alergenios_h3.pdf",
-      "ingredients": [
+        "Mostarda amarela",
+        "Salada BLT*",
         "Alface e tomate",
         "Ovo escalfado",
         "Bacon",
@@ -677,25 +665,9 @@
     {
       "name": "Arroz Thai",
       "category": "Acompanhamentos",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
-        "Batatas"
-      ],
-      "contains_allergens": [
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Salada c/ vinagreta h3",
-      "category": "Acompanhamentos",
-      "source_file": "tabela_alergenios_h3.pdf",
-      "ingredients": [
+        "Batatas",
+        "Salada c/ vinagreta h3",
         "Alface, tomate e cebola roxa",
         "Vinagreta h3",
         "Esparregado",
@@ -703,15 +675,15 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
           "key": "celery",
           "name_pt": "Aipo",
           "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
           "detail": null
         }
       ],
@@ -731,57 +703,71 @@
       ]
     },
     {
+      "name": "Limonadas",
+      "category": "Bebidas",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
       "name": "Limonada de limão",
-      "category": "Limonadas",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "category": "Bebidas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Limonada de morango",
-      "category": "Limonadas",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "category": "Bebidas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Limonada de maracujá",
-      "category": "Limonadas",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "category": "Bebidas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Limonada de romã",
-      "category": "Limonadas",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "category": "Bebidas",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chás",
+      "category": "Bebidas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Chá preto",
-      "category": "Chás",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "category": "Bebidas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Chá de limão",
-      "category": "Chás",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "category": "Bebidas",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Outras",
+      "category": "Bebidas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Cerveja",
-      "category": "Outras",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "category": "Bebidas",
       "ingredients": [],
       "contains_allergens": [
         {
@@ -795,8 +781,7 @@
     },
     {
       "name": "Vinho",
-      "category": "Outras",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "category": "Bebidas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
@@ -804,7 +789,6 @@
     {
       "name": "M. mousse doce de leite",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [],
       "contains_allergens": [
         {
@@ -862,7 +846,6 @@
     {
       "name": "M. mousse de avelã e choc.",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [],
       "contains_allergens": [
         {
@@ -920,7 +903,6 @@
     {
       "name": "Mousse de chocolate h3",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [],
       "contains_allergens": [
         {
@@ -978,7 +960,6 @@
     {
       "name": "Everydae de morango*",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Gelado de nata",
         "Topping de morango",
@@ -1022,7 +1003,6 @@
     {
       "name": "Everydae de maracujá*",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Gelado de nata",
         "Topping de maracujá",
@@ -1066,7 +1046,6 @@
     {
       "name": "Everydae de caramelo*",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Gelado de nata",
         "Topping de caramelo",
@@ -1128,7 +1107,6 @@
     {
       "name": "Pavlova de morango*",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Suspiro",
         "Gelado de nata",
@@ -1190,7 +1168,6 @@
     {
       "name": "Pavlova de maracujá*",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
       "ingredients": [
         "Suspiro",
         "Gelado de nata",
@@ -1252,9 +1229,64 @@
     {
       "name": "Bolo de chocolate*",
       "category": "Sobremesas",
-      "source_file": "tabela_alergenios_h3.pdf",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Bolo de chocolate",
+      "category": "Sobremesas",
       "ingredients": [
-        "Bolo de chocolate",
         "Gelado de nata"
       ],
       "contains_allergens": [

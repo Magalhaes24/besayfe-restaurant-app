@@ -22,6 +22,14 @@ logger = logging.getLogger(__name__)
 DDL = """
 PRAGMA foreign_keys = ON;
 
+-- Drop existing tables to ensure fresh schema
+DROP TABLE IF EXISTS dish_ingredients;
+DROP TABLE IF EXISTS dish_allergens;
+DROP TABLE IF EXISTS dishes;
+DROP TABLE IF EXISTS restaurants;
+DROP TABLE IF EXISTS ingredients;
+DROP TABLE IF EXISTS allergens;
+
 CREATE TABLE IF NOT EXISTS restaurants (
     id          INTEGER PRIMARY KEY AUTOINCREMENT,
     name        TEXT    NOT NULL UNIQUE,

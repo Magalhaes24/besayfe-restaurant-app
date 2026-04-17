@@ -1,7 +1,10 @@
 import { Stack, useLocalSearchParams } from 'expo-router';
 import { restaurants } from '../../data';
+import { useTheme } from '../_theme';
+import React from 'react';
 
 export default function RestaurantLayout() {
+  const theme = useTheme();
   const { restaurantId } = useLocalSearchParams<{ restaurantId: string }>();
   const index = parseInt(restaurantId ?? '0', 10);
   const restaurant = restaurants[index];
@@ -10,24 +13,19 @@ export default function RestaurantLayout() {
   return (
     <Stack
       screenOptions={{
-        headerStyle: { backgroundColor: '#FFFFFF' },
-        headerTintColor: '#1A1A1A',
+        headerStyle: { backgroundColor: theme.headerBg },
+        headerTintColor: theme.brandPrimary,
         headerTitleStyle: {
-          fontWeight: '700',
-          fontSize: 18,
+          fontWeight: '600',
+          fontSize: 17,
+          color: theme.headerText,
         },
         headerShadowVisible: false,
-        contentStyle: { backgroundColor: '#F5F5F5' },
+        contentStyle: { backgroundColor: theme.background },
       }}
     >
-      <Stack.Screen
-        name="index"
-        options={{ title: name }}
-      />
-      <Stack.Screen
-        name="[dishId]"
-        options={{ title: '' }}
-      />
+      <Stack.Screen name="index" options={{ title: name }} />
+      <Stack.Screen name="[dishId]" options={{ title: '' }} />
     </Stack>
   );
 }

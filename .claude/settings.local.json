@@ -22,7 +22,18 @@
       "Bash(cp -r tables-test backend/tables-test)",
       "Bash(cp -r output backend/output)",
       "Bash(npx create-expo-app@latest app --template blank-typescript)",
-      "Bash(npx expo *)"
+      "Bash(npx expo *)",
+      "Bash(node *)",
+      "Bash(npx tsc *)",
+      "Bash(grep -n '\\\\\\\\n' *.json)",
+      "Bash(npm run *)",
+      "Bash(find . *)",
+      "Bash(grep \"from.*_theme\" app/**/*.tsx app/**/**/*.tsx)",
+      "Bash(find app *)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:d[k] for k in ['dependencies','devDependencies'] if k in d}, indent=2\\)\\)\")",
+      "Bash(python3 *)",
+      "Read(//c/Users/FranciscoMagalhães/**)",
+      "Read(//c/Users/**)"
     ]
   }
 }

@@ -1,32 +1,47 @@
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { ThemeProvider, useTheme } from './_theme';
+import { ProfileProvider } from '../store/profileStore';
 
-export default function RootLayout() {
+function NavigationStack() {
+  const theme = useTheme();
+
   return (
     <>
-      <StatusBar style="dark" />
+      <StatusBar style={theme.statusBar} />
       <Stack
         screenOptions={{
-          headerStyle: { backgroundColor: '#FFFFFF' },
-          headerTintColor: '#1A1A1A',
+          headerStyle: { backgroundColor: theme.headerBg },
+          headerTintColor: theme.brandPrimary,
           headerTitleStyle: {
             fontWeight: '700',
             fontSize: 17,
+            color: theme.headerText,
           },
           headerShadowVisible: false,
-          contentStyle: { backgroundColor: '#F5F5F5' },
+          contentStyle: { backgroundColor: theme.background },
         }}
       >
         <Stack.Screen
-          name="index"
-          options={{ title: 'besayfe', headerLargeTitle: true }}
+          name="(tabs)"
+          options={{ headerShown: false }}
         />
-        {/* headerShown restored — dishes screen needs back affordance on web/Android */}
         <Stack.Screen
           name="[restaurantId]"
           options={{ headerShown: true }}
         />
       </Stack>
     </>
+  );
+}
+
+export default function RootLayout() {
+  return (
+    <ThemeProvider>
+      <ProfileProvider>
+        <NavigationStack />
+      </ProfileProvider>
+    </ThemeProvider>
   );
 }
