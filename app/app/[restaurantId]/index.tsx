@@ -1,5 +1,6 @@
 import { useLocalSearchParams, useNavigation, useRouter } from 'expo-router';
 import React, { useEffect, useMemo } from 'react';
+import H3Screen from './H3Screen';
 import {
   Pressable,
   SectionList,
@@ -82,6 +83,10 @@ export default function DishesListScreen() {
         </View>
       </SafeAreaView>
     );
+  }
+
+  if (restaurant.name === 'H3') {
+    return <H3Screen restIndex={restIndex} />;
   }
 
   const sectionMap = new Map<string, Section>();

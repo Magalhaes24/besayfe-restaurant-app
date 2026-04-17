@@ -33,7 +33,10 @@
       "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\({k:d[k] for k in ['dependencies','devDependencies'] if k in d}, indent=2\\)\\)\")",
       "Bash(python3 *)",
       "Read(//c/Users/FranciscoMagalhães/**)",
-      "Read(//c/Users/**)"
+      "Read(//c/Users/**)",
+      "Bash(python normalizer.py)",
+      "Bash(python normalizer.py tables-test/tabela_h3.pdf --restaurant-name \"H3\" --output-dir output --json-name h3.json --db-name h3.db)",
+      "Bash(python *)"
     ]
   }
 }

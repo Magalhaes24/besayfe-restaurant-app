@@ -1,6 +1,6 @@
 {
   "name": "H3",
-  "source_file": "tabela_alergenios_h3.pdf",
+  "source_file": "tabela_h3.pdf",
   "total_dishes": 42,
   "dishes": [
     {
@@ -17,7 +17,14 @@
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Limão",
@@ -35,13 +42,26 @@
       ],
       "contains_allergens": [
         {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Tuga",
@@ -53,9 +73,15 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
           "detail": null
         },
         {
@@ -65,7 +91,14 @@
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Dente de alho",
@@ -90,13 +123,26 @@
       ],
       "contains_allergens": [
         {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Cheese",
@@ -110,23 +156,9 @@
       ],
       "contains_allergens": [
         {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "mustard",
-          "name_pt": "Mostarda",
-          "name_en": "Mustard",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
           "detail": null
         },
         {
@@ -136,9 +168,53 @@
           "detail": null
         },
         {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
           "key": "celery",
           "name_pt": "Aipo",
           "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         }
       ]
@@ -155,13 +231,32 @@
       ],
       "contains_allergens": [
         {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Carbonara",
@@ -176,9 +271,27 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
           "detail": null
         },
         {
@@ -188,7 +301,14 @@
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Benedict",
@@ -201,6 +321,18 @@
       ],
       "contains_allergens": [
         {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
@@ -209,9 +341,21 @@
       ],
       "may_contain_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
           "detail": null
         }
       ]
@@ -235,9 +379,27 @@
       ],
       "may_contain_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
           "detail": null
         },
         {
@@ -260,9 +422,21 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
           "detail": null
         },
         {
@@ -274,9 +448,27 @@
       ],
       "may_contain_allergens": [
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         }
       ]
@@ -293,23 +485,53 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
-        }
-      ],
-      "may_contain_allergens": [
+        },
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
           "detail": null
         },
         {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         }
       ]
@@ -326,23 +548,47 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
-        }
-      ],
-      "may_contain_allergens": [
+        },
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
           "detail": null
         },
         {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         }
       ]
@@ -361,23 +607,53 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         },
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
           "detail": null
         }
       ],
       "may_contain_allergens": [
         {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         }
       ]
@@ -397,23 +673,53 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         },
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
           "detail": null
         }
       ],
       "may_contain_allergens": [
         {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         }
       ]
@@ -432,9 +738,47 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
           "detail": null
         },
         {
@@ -442,19 +786,17 @@
           "name_pt": "Aipo",
           "name_en": "Celery",
           "detail": null
-        }
-      ],
-      "may_contain_allergens": [
+        },
         {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         },
         {
-          "key": "milk",
-          "name_pt": "Leite",
-          "name_en": "Milk",
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
           "detail": null
         }
       ]
@@ -474,104 +816,15 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         },
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        },
-        {
-          "key": "lupin",
-          "name_pt": "Tremoço",
-          "name_en": "Lupin",
-          "detail": null
-        },
-        {
-          "key": "molluscs",
-          "name_pt": "Moluscos",
-          "name_en": "Molluscs",
-          "detail": null
-        },
-        {
-          "key": "milk",
-          "name_pt": "Leite",
-          "name_en": "Milk",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Benedict no pão",
-      "category": "Menus No Pão",
-      "ingredients": [
-        "Pão h3",
-        "Espinafres salteados",
-        "Molho holandês",
-        "Hambúrguer"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Pica-Pau (Refresh)",
-      "category": "Menus",
-      "ingredients": [
-        "Hambúrguer",
-        "Molho Pica-Pau",
-        "Mix de pickles e azeitonas"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "peanuts",
-          "name_pt": "Amendoim",
-          "name_en": "Peanuts",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
           "detail": null
         },
         {
@@ -587,9 +840,200 @@
           "detail": null
         },
         {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        },
+        {
+          "key": "lupin",
+          "name_pt": "Tremoço",
+          "name_en": "Lupin",
+          "detail": null
+        },
+        {
+          "key": "molluscs",
+          "name_pt": "Moluscos",
+          "name_en": "Molluscs",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Benedict no pão",
+      "category": "Menus No Pão",
+      "ingredients": [
+        "Pão h3",
+        "Espinafres salteados",
+        "Molho holandês",
+        "Hambúrguer"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Pica-Pau (Refresh)",
+      "category": "Menus",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho Pica-Pau",
+        "Mix de pickles e azeitonas"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "crustaceans",
+          "name_pt": "Crustáceos",
+          "name_en": "Crustaceans",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         },
         {
@@ -612,9 +1056,27 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
           "detail": null
         },
         {
@@ -622,9 +1084,22 @@
           "name_pt": "Aipo",
           "name_en": "Celery",
           "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Salada BLT*",
@@ -639,15 +1114,33 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         },
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
           "detail": null
         }
       ],
@@ -661,9 +1154,9 @@
       ],
       "contains_allergens": [
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
           "detail": null
         }
       ],
@@ -680,19 +1173,17 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         },
         {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
           "detail": null
-        }
-      ],
-      "may_contain_allergens": [
+        },
         {
           "key": "milk",
           "name_pt": "Leite",
@@ -703,6 +1194,44 @@
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         }
       ]
@@ -755,9 +1284,9 @@
       "ingredients": [],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         }
       ],
@@ -767,7 +1296,14 @@
       "name": "Vinho",
       "category": "Outras",
       "ingredients": [],
-      "contains_allergens": [],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
       "may_contain_allergens": []
     },
     {

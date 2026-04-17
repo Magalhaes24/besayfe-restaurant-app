@@ -1,7 +1,7 @@
 {
   "name": "H3",
   "source_file": "tabela_h3.pdf",
-  "total_dishes": 46,
+  "total_dishes": 42,
   "dishes": [
     {
       "name": "Grelhado",
@@ -17,7 +17,14 @@
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Limão",
@@ -35,13 +42,26 @@
       ],
       "contains_allergens": [
         {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Tuga",
@@ -53,9 +73,15 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
           "detail": null
         },
         {
@@ -65,7 +91,14 @@
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Dente de alho",
@@ -90,13 +123,26 @@
       ],
       "contains_allergens": [
         {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Cheese",
@@ -110,23 +156,9 @@
       ],
       "contains_allergens": [
         {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "mustard",
-          "name_pt": "Mostarda",
-          "name_en": "Mustard",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
           "detail": null
         },
         {
@@ -136,9 +168,53 @@
           "detail": null
         },
         {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
           "key": "celery",
           "name_pt": "Aipo",
           "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
           "detail": null
         }
       ]
@@ -155,13 +231,32 @@
       ],
       "contains_allergens": [
         {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
           "key": "sulphites",
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
           "detail": null
         }
       ],
-      "may_contain_allergens": []
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
     },
     {
       "name": "Carbonara",
@@ -176,430 +271,15 @@
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         },
         {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Benedict",
-      "category": "Menus",
-      "ingredients": [
-        "Hambúrguer",
-        "Espinafres salteados",
-        "Molho holandês",
-        "Ovo escalfado"
-      ],
-      "contains_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "French",
-      "category": "Menus",
-      "ingredients": [
-        "Hambúrguer"
-      ],
-      "contains_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "mustard",
-          "name_pt": "Mostarda",
-          "name_en": "Mustard",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Escalope de foie gras",
-      "category": "Menus",
-      "ingredients": [
-        "Cebola confitada"
-      ],
-      "contains_allergens": [],
-      "may_contain_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "mustard",
-          "name_pt": "Mostarda",
-          "name_en": "Mustard",
-          "detail": null
-        },
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Redução de vinho do Porto",
-      "category": "Menus",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Superbread",
-      "category": "Menus",
-      "ingredients": [
-        "Pão focaccia",
-        "Hambúrguer",
-        "Alface, tomate e cebola roxa",
-        "Maionese mostarda antiga"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Grelhado no pão",
-      "category": "Menus No Pão",
-      "ingredients": [
-        "Pão h3",
-        "Ketchup",
-        "Maionese mostarda antiga",
-        "Alface, tomate e cebola roxa",
-        "Hambúrguer"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        },
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Tuga no pão",
-      "category": "Menus No Pão",
-      "ingredients": [
-        "Pão h3",
-        "Alface e tomate",
-        "Hambúrguer",
-        "Molho tuga",
-        "Ovo estrelado"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        },
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Med no pão",
-      "category": "Menus No Pão",
-      "ingredients": [
-        "Pão h3",
-        "Maionese mostarda antiga",
-        "Hambúrguer",
-        "Molho de azeite e limão",
-        "Rúcula",
-        "Parmesão",
-        "Tomate seco"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Carbonara no pão",
-      "category": "Menus No Pão",
-      "ingredients": [
-        "Pão h3",
-        "Alface e tomate",
-        "Hambúrguer",
-        "Molho carbonara",
-        "Ovo estrelado",
-        "Bacon aos cubos",
-        "Parmesão",
-        "Cebolinho"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Cheese no pão",
-      "category": "Menus No Pão",
-      "ingredients": [
-        "Pão h3",
-        "Alface e tomate",
-        "Ketchup",
-        "Maionese mostarda antiga",
-        "Hambúrguer",
-        "Molho de queijo",
-        "Cebola salteada"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        },
-        {
-          "key": "milk",
-          "name_pt": "Leite",
-          "name_en": "Milk",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Cheese Bacon no pão",
-      "category": "Menus No Pão",
-      "ingredients": [
-        "Pão h3",
-        "Alface e tomate",
-        "Ketchup",
-        "Maionese mostarda antiga",
-        "Hambúrguer",
-        "Molho de queijo",
-        "Cebola salteada",
-        "Bacon aos cubos"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        },
-        {
-          "key": "lupin",
-          "name_pt": "Tremoço",
-          "name_en": "Lupin",
-          "detail": null
-        },
-        {
-          "key": "molluscs",
-          "name_pt": "Moluscos",
-          "name_en": "Molluscs",
-          "detail": null
-        },
-        {
-          "key": "milk",
-          "name_pt": "Leite",
-          "name_en": "Milk",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Benedict no pão",
-      "category": "Menus No Pão",
-      "ingredients": [
-        "Pão h3",
-        "Espinafres salteados"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Pica-Pau (Refresh)",
-      "category": "Menus",
-      "ingredients": [
-        "Hambúrguer",
-        "Molho Pica-Pau"
-      ],
-      "contains_allergens": [
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "peanuts",
-          "name_pt": "Amendoim",
-          "name_en": "Peanuts",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
           "detail": null
         },
         {
@@ -619,75 +299,33 @@
           "name_pt": "Sulfitos",
           "name_en": "Sulphites",
           "detail": null
-        },
+        }
+      ],
+      "may_contain_allergens": [
         {
-          "key": "molluscs",
-          "name_pt": "Moluscos",
-          "name_en": "Molluscs",
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
           "detail": null
         }
       ]
     },
     {
-      "name": "Mix de pickles e azeitonas",
+      "name": "Benedict",
       "category": "Menus",
       "ingredients": [
-        "Croquetes*",
-        "Croquetes de carne",
+        "Hambúrguer",
         "Espinafres salteados",
-        "Ovo estrelado",
-        "Molho de iogurte",
-        "Mostarda amarela",
-        "Salada BLT*",
-        "Alface e tomate",
-        "Ovo escalfado",
-        "Bacon",
-        "Molho de iogurte",
-        "Vinagreta h3",
-        "Crocante de cebola"
+        "Molho holandês",
+        "Ovo escalfado"
       ],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
           "detail": null
         },
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Arroz Thai",
-      "category": "Acompanhamentos",
-      "ingredients": [
-        "Batatas",
-        "Salada c/ vinagreta h3",
-        "Alface, tomate e cebola roxa",
-        "Vinagreta h3",
-        "Esparregado",
-        "Pão de Mafra"
-      ],
-      "contains_allergens": [
-        {
-          "key": "celery",
-          "name_pt": "Aipo",
-          "name_en": "Celery",
-          "detail": null
-        },
-        {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
         {
           "key": "milk",
           "name_pt": "Leite",
@@ -700,80 +338,955 @@
           "name_en": "Sulphites",
           "detail": null
         }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
       ]
     },
     {
-      "name": "Limonadas",
-      "category": "Bebidas",
-      "ingredients": [],
-      "contains_allergens": [],
+      "name": "French",
+      "category": "Menus",
+      "ingredients": [
+        "Hambúrguer",
+        "Escalope de foie gras",
+        "Cebola confitada",
+        "Redução de vinho do Porto"
+      ],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Superbread",
+      "category": "Menus",
+      "ingredients": [
+        "Pão focaccia",
+        "Hambúrguer",
+        "Alface, tomate e cebola roxa",
+        "Maionese mostarda antiga",
+        "Ketchup"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Grelhado no pão",
+      "category": "Menus No Pão",
+      "ingredients": [
+        "Pão h3",
+        "Ketchup",
+        "Maionese mostarda antiga",
+        "Alface, tomate e cebola roxa",
+        "Hambúrguer"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Tuga no pão",
+      "category": "Menus No Pão",
+      "ingredients": [
+        "Pão h3",
+        "Alface e tomate",
+        "Hambúrguer",
+        "Molho tuga",
+        "Ovo estrelado"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Med no pão",
+      "category": "Menus No Pão",
+      "ingredients": [
+        "Pão h3",
+        "Maionese mostarda antiga",
+        "Hambúrguer",
+        "Molho de azeite e limão",
+        "Rúcula",
+        "Parmesão",
+        "Tomate seco"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Carbonara no pão",
+      "category": "Menus No Pão",
+      "ingredients": [
+        "Pão h3",
+        "Alface e tomate",
+        "Hambúrguer",
+        "Molho carbonara",
+        "Ovo estrelado",
+        "Bacon aos cubos",
+        "Parmesão",
+        "Cebolinho"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Cheese no pão",
+      "category": "Menus No Pão",
+      "ingredients": [
+        "Pão h3",
+        "Alface e tomate",
+        "Ketchup",
+        "Maionese mostarda antiga",
+        "Hambúrguer",
+        "Molho de queijo",
+        "Cebola salteada"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Cheese Bacon no pão",
+      "category": "Menus No Pão",
+      "ingredients": [
+        "Pão h3",
+        "Alface e tomate",
+        "Ketchup",
+        "Maionese mostarda antiga",
+        "Hambúrguer",
+        "Molho de queijo",
+        "Cebola salteada",
+        "Bacon aos cubos"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        },
+        {
+          "key": "lupin",
+          "name_pt": "Tremoço",
+          "name_en": "Lupin",
+          "detail": null
+        },
+        {
+          "key": "molluscs",
+          "name_pt": "Moluscos",
+          "name_en": "Molluscs",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Benedict no pão",
+      "category": "Menus No Pão",
+      "ingredients": [
+        "Pão h3",
+        "Espinafres salteados",
+        "Molho holandês",
+        "Hambúrguer"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Pica-Pau (Refresh)",
+      "category": "Menus",
+      "ingredients": [
+        "Hambúrguer",
+        "Molho Pica-Pau",
+        "Mix de pickles e azeitonas"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "crustaceans",
+          "name_pt": "Crustáceos",
+          "name_en": "Crustaceans",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "fish",
+          "name_pt": "Peixe",
+          "name_en": "Fish",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        },
+        {
+          "key": "molluscs",
+          "name_pt": "Moluscos",
+          "name_en": "Molluscs",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Croquetes*",
+      "category": "Menus",
+      "ingredients": [
+        "Croquetes de carne",
+        "Espinafres salteados",
+        "Ovo estrelado",
+        "Molho de iogurte",
+        "Mostarda amarela"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        }
+      ]
+    },
+    {
+      "name": "Salada BLT*",
+      "category": "Menus",
+      "ingredients": [
+        "Alface e tomate",
+        "Ovo escalfado",
+        "Bacon",
+        "Molho de iogurte",
+        "Vinagreta h3",
+        "Crocante de cebola"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        }
+      ],
       "may_contain_allergens": []
     },
     {
+      "name": "Arroz Thai",
+      "category": "Acompanhamentos",
+      "ingredients": [
+        "Batatas"
+      ],
+      "contains_allergens": [
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Salada c/ vinagreta h3",
+      "category": "Acompanhamentos",
+      "ingredients": [
+        "Alface, tomate e cebola roxa",
+        "Vinagreta h3",
+        "Esparregado",
+        "Pão de Mafra"
+      ],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
+        {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
+          "key": "milk",
+          "name_pt": "Leite",
+          "name_en": "Milk",
+          "detail": null
+        },
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": [
+        {
+          "key": "eggs",
+          "name_pt": "Ovos",
+          "name_en": "Eggs",
+          "detail": null
+        },
+        {
+          "key": "peanuts",
+          "name_pt": "Amendoim",
+          "name_en": "Peanuts",
+          "detail": null
+        },
+        {
+          "key": "soybeans",
+          "name_pt": "Soja",
+          "name_en": "Soybeans",
+          "detail": null
+        },
+        {
+          "key": "nuts",
+          "name_pt": "Frutos de Casca Rija",
+          "name_en": "Nuts",
+          "detail": null
+        },
+        {
+          "key": "celery",
+          "name_pt": "Aipo",
+          "name_en": "Celery",
+          "detail": null
+        },
+        {
+          "key": "sesame",
+          "name_pt": "Sésamo",
+          "name_en": "Sesame",
+          "detail": null
+        }
+      ]
+    },
+    {
       "name": "Limonada de limão",
-      "category": "Bebidas",
+      "category": "Limonadas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Limonada de morango",
-      "category": "Bebidas",
+      "category": "Limonadas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Limonada de maracujá",
-      "category": "Bebidas",
+      "category": "Limonadas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Limonada de romã",
-      "category": "Bebidas",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Chás",
-      "category": "Bebidas",
+      "category": "Limonadas",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Chá preto",
-      "category": "Bebidas",
+      "category": "Chás",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Chá de limão",
-      "category": "Bebidas",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Outras",
-      "category": "Bebidas",
+      "category": "Chás",
       "ingredients": [],
       "contains_allergens": [],
       "may_contain_allergens": []
     },
     {
       "name": "Cerveja",
-      "category": "Bebidas",
+      "category": "Outras",
       "ingredients": [],
       "contains_allergens": [
         {
-          "key": "fish",
-          "name_pt": "Peixe",
-          "name_en": "Fish",
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         }
       ],
@@ -781,9 +1294,16 @@
     },
     {
       "name": "Vinho",
-      "category": "Bebidas",
+      "category": "Outras",
       "ingredients": [],
-      "contains_allergens": [],
+      "contains_allergens": [
+        {
+          "key": "sulphites",
+          "name_pt": "Sulfitos",
+          "name_en": "Sulphites",
+          "detail": null
+        }
+      ],
       "may_contain_allergens": []
     },
     {
@@ -1229,64 +1749,8 @@
     {
       "name": "Bolo de chocolate*",
       "category": "Sobremesas",
-      "ingredients": [],
-      "contains_allergens": [
-        {
-          "key": "gluten",
-          "name_pt": "Glúten",
-          "name_en": "Gluten",
-          "detail": null
-        },
-        {
-          "key": "eggs",
-          "name_pt": "Ovos",
-          "name_en": "Eggs",
-          "detail": null
-        },
-        {
-          "key": "soybeans",
-          "name_pt": "Soja",
-          "name_en": "Soybeans",
-          "detail": null
-        },
-        {
-          "key": "milk",
-          "name_pt": "Leite",
-          "name_en": "Milk",
-          "detail": null
-        }
-      ],
-      "may_contain_allergens": [
-        {
-          "key": "peanuts",
-          "name_pt": "Amendoim",
-          "name_en": "Peanuts",
-          "detail": null
-        },
-        {
-          "key": "nuts",
-          "name_pt": "Frutos de Casca Rija",
-          "name_en": "Nuts",
-          "detail": null
-        },
-        {
-          "key": "sesame",
-          "name_pt": "Sésamo",
-          "name_en": "Sesame",
-          "detail": null
-        },
-        {
-          "key": "sulphites",
-          "name_pt": "Sulfitos",
-          "name_en": "Sulphites",
-          "detail": null
-        }
-      ]
-    },
-    {
-      "name": "Bolo de chocolate",
-      "category": "Sobremesas",
       "ingredients": [
+        "Bolo de chocolate",
         "Gelado de nata"
       ],
       "contains_allergens": [

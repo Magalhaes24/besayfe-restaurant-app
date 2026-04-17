@@ -453,19 +453,19 @@ def _build_h3_x_col_map(page: pdfplumber.page.Page) -> Dict[str, str]:
         and any(s in w["text"].lower() for s in _ALLERGEN_SUBSTRINGS)
     ]
 
-    detected: Dict[float, str] = {}
+    # Several allergen names are fragmented/hyphenated in the PDF (e.g.
+    # "FRUTOS DE C. RIJA", "MOS-TARDA", "CRUSTÁ-CEOS"), so detection is
+    # always incomplete. Supplement detected positions with the fixed map
+    # to ensure all 14 allergens are covered.
+    detected: Dict[float, str] = dict(_H3_FIXED_X_MAP)
     for w in header_words:
         legend_x = (w["x0"] + w["x1"]) / 2
         key = _resolve_header(w["text"])
         if key:
-            # Convert legend label position to actual data marker position
             data_x = 125.4 + 0.769 * legend_x
             detected[data_x] = key
 
-    if len(detected) >= 8:
-        return detected
-
-    return _H3_FIXED_X_MAP
+    return detected
 
 
 def _assign_allergen_by_x(
