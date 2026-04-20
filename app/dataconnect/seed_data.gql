@@ -1,0 +1,97 @@
+mutation CreateDemoData @transaction @auth(level: USER, insecureReason: "This operation is for seeding data and should only be callable by authenticated users.") {
+  allergy_insertMany(data: [
+    {name: "Peanuts"},
+    {name: "Dairy"},
+    {name: "Gluten"},
+    {name: "Shellfish"}
+  ])
+  restaurant_insertMany(data: [
+    {
+      id: "b4d1a5e0-9c2f-4e3b-8d1a-2e7c0f8a9b3d",
+      name: "The Delicious Spoon",
+      address: "123 Main St",
+      latitude: 34.0522,
+      longitude: -118.2437,
+      phoneNumber: "555-123-4567",
+      website: "http://deliciousspoon.com",
+      description: "A cozy restaurant with a diverse menu.",
+      cuisineType: "Fusion",
+      createdAt_expr: "request.time"
+    },
+    {
+      id: "c5e2b6f1-0d3g-5f4c-9e2b-3f8d1a9c0e4f",
+      name: "Pasta Paradise",
+      address: "456 Oak Ave",
+      latitude: 34.0500,
+      longitude: -118.2500,
+      phoneNumber: "555-987-6543",
+      website: "http://pastaparadise.com",
+      description: "Authentic Italian cuisine.",
+      cuisineType: "Italian",
+      createdAt_expr: "request.time"
+    }
+  ])
+  menuItem_insertMany(data: [
+    {
+      id: "d6f3c7g2-1e4h-6g5d-0f3c-4h9e2b1d0f5g",
+      restaurantId: "b4d1a5e0-9c2f-4e3b-8d1a-2e7c0f8a9b3d",
+      name: "Pad Thai",
+      price: 15.99,
+      description: "Classic Pad Thai with shrimp and peanuts.",
+      isAllergyFriendly: false,
+      createdAt_expr: "request.time"
+    },
+    {
+      id: "e7g4d8h3-2f5i-7h6e-1g4d-5i0f3c2e1g6h",
+      restaurantId: "c5e2b6f1-0d3g-5f4c-9e2b-3f8d1a9c0e4f",
+      name: "Spaghetti Carbonara",
+      price: 18.50,
+      description: "Creamy spaghetti with pancetta and egg.",
+      isAllergyFriendly: false,
+      createdAt_expr: "request.time"
+    },
+    {
+      id: "f8h5e9i4-3g6j-8i7f-2h5e-6j1g4d3f2i7j",
+      restaurantId: "b4d1a5e0-9c2f-4e3b-8d1a-2e7c0f8a9b3d",
+      name: "Vegan Burger",
+      price: 12.00,
+      description: "Plant-based burger with fresh toppings.",
+      isAllergyFriendly: true,
+      createdAt_expr: "request.time"
+    }
+  ])
+  menuItemAllergy_insertMany(data: [
+    {menuItemId: "d6f3c7g2-1e4h-6g5d-0f3c-4h9e2b1d0f5g", allergyId: "6e2b3f8d-1a9c-0e4f-b4d1-a5e09c2f4e3b", isPresent: true}, # Pad Thai with Peanuts (assuming Peanut allergy ID)
+    {menuItemId: "e7g4d8h3-2f5i-7h6e-1g4d-5i0f3c2e1g6h", allergyId: "7f3c4h9e-2b1d-0f5g-c5e2-b6f10d3g5f4c", isPresent: true}  # Spaghetti Carbonara with Dairy (assuming Dairy allergy ID)
+  ])
+  user_insertMany(data: [
+    {
+      id: "user1-uuid",
+      displayName: "Alice Smith",
+      email: "alice@example.com",
+      createdAt_expr: "request.time"
+    },
+    {
+      id: "user2-uuid",
+      displayName: "Bob Johnson",
+      email: "bob@example.com",
+      createdAt_expr: "request.time"
+    }
+  ])
+  review_insertMany(data: [
+    {
+      restaurantId: "b4d1a5e0-9c2f-4e3b-8d1a-2e7c0f8a9b3d",
+      userId: "user1-uuid",
+      rating: 5,
+      comment: "Absolutely loved the Pad Thai!",
+      createdAt_expr: "request.time"
+    },
+    {
+      restaurantId: "c5e2b6f1-0d3g-5f4c-9e2b-3f8d1a9c0e4f",
+      userId: "user2-uuid",
+      rating: 4,
+      comment: "Great pasta, but a bit pricey.",
+      createdAt_expr: "request.time"
+    }
+  ])
+}

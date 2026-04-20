@@ -1,14 +1,9 @@
-import { Stack, useLocalSearchParams } from 'expo-router';
-import { restaurants } from '../../data';
+import { Stack } from 'expo-router';
 import { useTheme } from '../_theme';
 import React from 'react';
 
 export default function RestaurantLayout() {
   const theme = useTheme();
-  const { restaurantId } = useLocalSearchParams<{ restaurantId: string }>();
-  const index = parseInt(restaurantId ?? '0', 10);
-  const restaurant = restaurants[index];
-  const name = restaurant?.name ?? 'Restaurant';
 
   return (
     <Stack
@@ -24,7 +19,7 @@ export default function RestaurantLayout() {
         contentStyle: { backgroundColor: theme.background },
       }}
     >
-      <Stack.Screen name="index" options={{ title: name }} />
+      <Stack.Screen name="index" options={{ title: '' }} />
       <Stack.Screen name="[dishId]" options={{ title: '' }} />
     </Stack>
   );

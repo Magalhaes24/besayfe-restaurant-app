@@ -1,0 +1,50 @@
+type User @table {
+  displayName: String!
+  email: String
+  photoUrl: String
+  createdAt: Timestamp!
+}
+
+type Allergy @table {
+  name: String!
+}
+
+type UserAllergy @table(key: ["user", "allergy"]) {
+  user: User!
+  allergy: Allergy!
+}
+
+type Restaurant @table {
+  name: String!
+  address: String!
+  latitude: Float!
+  longitude: Float!
+  phoneNumber: String
+  website: String
+  description: String
+  cuisineType: String
+  createdAt: Timestamp!
+}
+
+type MenuItem @table {
+  restaurant: Restaurant
+  name: String!
+  price: Float!
+  description: String
+  isAllergyFriendly: Boolean
+  createdAt: Timestamp!
+}
+
+type MenuItemAllergy @table(key: ["menuItem", "allergy"]) {
+  menuItem: MenuItem!
+  allergy: Allergy!
+  isPresent: Boolean!
+}
+
+type Review @table {
+  user: User
+  restaurant: Restaurant
+  rating: Int!
+  comment: String
+  createdAt: Timestamp!
+}

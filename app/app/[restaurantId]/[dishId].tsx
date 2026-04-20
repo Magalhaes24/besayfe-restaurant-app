@@ -1,6 +1,7 @@
 import { useLocalSearchParams, useNavigation } from 'expo-router';
 import React, { useEffect, useMemo, useState } from 'react';
 import H3DishScreen from './H3DishScreen';
+import ViraDishScreen from './ViraDishScreen';
 import {
   LayoutAnimation,
   Platform,
@@ -240,6 +241,9 @@ export default function DishDetailScreen() {
 
   if (restaurant?.name === 'H3') {
     return <H3DishScreen restIndex={restIndex} dishIndex={dIndex} />;
+  }
+  if (restaurant?.name === 'Vira') {
+    return <ViraDishScreen restIndex={restIndex} dishIndex={dIndex} />;
   }
 
   const matchedContains = dish.contains_allergens.filter(a => userKeys.has(a.key));

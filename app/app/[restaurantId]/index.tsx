@@ -1,6 +1,7 @@
 import { useLocalSearchParams, useNavigation, useRouter } from 'expo-router';
 import React, { useEffect, useMemo } from 'react';
 import H3Screen from './H3Screen';
+import ViraScreen from './ViraScreen';
 import {
   Pressable,
   SectionList,
@@ -88,6 +89,9 @@ export default function DishesListScreen() {
   if (restaurant.name === 'H3') {
     return <H3Screen restIndex={restIndex} />;
   }
+  if (restaurant.name === 'Vira') {
+    return <ViraScreen restIndex={restIndex} />;
+  }
 
   const sectionMap = new Map<string, Section>();
   restaurant.dishes.forEach((dish, idx) => {
@@ -138,6 +142,7 @@ export default function DishesListScreen() {
           const dishHasAnyAllergens =
             dish.contains_allergens.length > 0 || dish.may_contain_allergens.length > 0;
           const isPersonalSafe = hasProfileAllergens && allergenEntries.length === 0 && dishHasAnyAllergens;
+          const hasMatchingAllergens = hasProfileAllergens && allergenEntries.length > 0;
 
           const visibleAllergens = allergenEntries.slice(0, 2);
           const overflowCount = allergenEntries.length - visibleAllergens.length;
@@ -154,6 +159,7 @@ export default function DishesListScreen() {
                 s.dishRow,
                 isFirst && s.dishRowFirst,
                 isLast && s.dishRowLast,
+                hasMatchingAllergens && s.dishRowDanger,
                 pressed && s.dishRowPressed,
               ]}
               android_ripple={{ color: theme.ripple, borderless: false }}
@@ -254,6 +260,11 @@ function makeStyles(theme: ReturnType<typeof useTheme>) {
       borderBottomLeftRadius: radius.lg,
       borderBottomRightRadius: radius.lg,
       marginBottom: space.sm,
+    },
+    dishRowDanger: {
+      borderColor: theme.riskHighBorder,
+      borderLeftWidth: 2,
+      borderRightWidth: 2,
     },
     dishRowPressed: {
       backgroundColor: theme.surfaceSubtle,

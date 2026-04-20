@@ -1,0 +1,41 @@
+query ListAllRestaurants @auth(level: PUBLIC, insecureReason: "This operation is safe to expose to the public as it only lists public restaurant information.") {
+  restaurants {
+    id
+    name
+    address
+    cuisineType
+    phoneNumber
+    website
+    description
+    createdAt
+  }
+}
+
+query GetMyReviews @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users as it only retrieves reviews made by the authenticated user.") {
+  reviews(where: {userId: {eq_expr: "auth.uid"}}) {
+    id
+    rating
+    comment
+    createdAt
+    restaurant {
+      name
+      address
+    }
+  }
+}
+
+mutation CreateNewReview($restaurantId: UUID!, $rating: Int!, $comment: String) @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users for creating their own reviews.") {
+  review_insert(data: {
+    restaurantId: $restaurantId,
+    rating: $rating,
+    comment: $comment,
+    userId_expr: "auth.uid"
+  })
+}
+
+mutation RegisterUserAllergy($allergyId: UUID!) @auth(level: USER, insecureReason: "This operation is safe to expose to all logged in users for managing their own allergies.") {
+  userAllergy_insert(data: {
+    userId_expr: "auth.uid",
+    allergyId: $allergyId
+  })
+}
