@@ -212,27 +212,56 @@ function EditOrderModal({
 }
 
 // ─── Order row ────────────────────────────────────────────────────────────────
-function OrderRow({ order, onPress }: { order: Order; onPress: () => void }) {
+function OrderRow({ order, onPress, index }: { order: Order; onPress: () => void; index: number }) {
   const time = new Date(order.createdAt).toLocaleTimeString('pt-PT', { hour: '2-digit', minute: '2-digit' });
   const date = new Date(order.createdAt).toLocaleDateString('pt-PT', { day: '2-digit', month: '2-digit' });
+
+  const anim = useRef(new Animated.Value(0)).current;
+  const pressScale = useRef(new Animated.Value(1)).current;
+
+  useEffect(() => {
+    Animated.timing(anim, {
+      toValue: 1,
+      duration: 280,
+      delay: Math.min(index, 8) * 40,
+      useNativeDriver: true,
+    }).start();
+  }, []);
+
   return (
-    <TouchableOpacity style={st.orderRow} onPress={onPress} activeOpacity={0.7}>
-      <View style={st.orderLeft}>
-        <View style={st.orderTopRow}>
-          <Text style={st.orderRef}>{order.ref}</Text>
-          <StatusBadge status={order.status} />
+    <Animated.View
+      style={{
+        opacity: anim,
+        transform: [
+          { scale: pressScale },
+          { translateY: anim.interpolate({ inputRange: [0, 1], outputRange: [10, 0] }) },
+        ],
+      }}
+    >
+      <TouchableOpacity
+        style={st.orderRow}
+        onPress={onPress}
+        onPressIn={() => Animated.spring(pressScale, { toValue: 0.98, useNativeDriver: true, damping: 20, stiffness: 400 }).start()}
+        onPressOut={() => Animated.spring(pressScale, { toValue: 1, useNativeDriver: true, damping: 12, stiffness: 200 }).start()}
+        activeOpacity={1}
+      >
+        <View style={st.orderLeft}>
+          <View style={st.orderTopRow}>
+            <Text style={st.orderRef}>{order.ref}</Text>
+            <StatusBadge status={order.status} />
+          </View>
+          <Text style={st.orderMeta}>
+            {order.type === 'mesa' ? `Mesa ${order.table}` : `Takeaway · ${order.customerName}`}
+            {' · '}{order.items.length} {order.items.length === 1 ? 'item' : 'itens'}
+          </Text>
+          <Text style={st.orderTime}>{date} às {time}</Text>
         </View>
-        <Text style={st.orderMeta}>
-          {order.type === 'mesa' ? `Mesa ${order.table}` : `Takeaway · ${order.customerName}`}
-          {' · '}{order.items.length} {order.items.length === 1 ? 'item' : 'itens'}
-        </Text>
-        <Text style={st.orderTime}>{date} às {time}</Text>
-      </View>
-      <View style={st.orderRight}>
-        <Text style={st.orderTotal}>{order.total.toFixed(2)} €</Text>
-        <Ionicons name="chevron-forward" size={14} color={GRAY} />
-      </View>
-    </TouchableOpacity>
+        <View style={st.orderRight}>
+          <Text style={st.orderTotal}>{order.total.toFixed(2)} €</Text>
+          <Ionicons name="chevron-forward" size={14} color={GRAY} />
+        </View>
+      </TouchableOpacity>
+    </Animated.View>
   );
 }
 
@@ -378,8 +407,8 @@ export default function AdminScreen() {
               <Text style={st.emptyText}>Sem pedidos</Text>
             </View>
           ) : (
-            filtered.map(order => (
-              <OrderRow key={order.id} order={order} onPress={() => setEditing(order)} />
+            filtered.map((order, i) => (
+              <OrderRow key={order.id} order={order} index={i} onPress={() => setEditing(order)} />
             ))
           )}
         </View>

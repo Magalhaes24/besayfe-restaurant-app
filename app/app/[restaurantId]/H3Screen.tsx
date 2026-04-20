@@ -1,6 +1,7 @@
 import { useNavigation, useRouter } from 'expo-router';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
+  Animated,
   FlatList,
   Image,
   KeyboardAvoidingView,
@@ -154,46 +155,80 @@ function MenuCard({
   const uri = DISH_IMAGE[dish.name] ?? PH;
   const price = getPrice(dish);
 
+  const pressScale = useRef(new Animated.Value(1)).current;
+  const badgeScale = useRef(new Animated.Value(quantity > 0 ? 1 : 0)).current;
+  const prevQty = useRef(quantity);
+
+  useEffect(() => {
+    const prev = prevQty.current;
+    prevQty.current = quantity;
+    if (quantity > 0 && quantity !== prev) {
+      badgeScale.setValue(prev === 0 ? 0.3 : 1);
+      Animated.spring(badgeScale, {
+        toValue: 1,
+        useNativeDriver: true,
+        damping: 9,
+        stiffness: 350,
+      }).start();
+    } else if (quantity === 0) {
+      Animated.spring(badgeScale, {
+        toValue: 0,
+        useNativeDriver: true,
+        damping: 15,
+        stiffness: 300,
+      }).start();
+    }
+  }, [quantity]);
+
+  const onPressIn = useCallback(() =>
+    Animated.spring(pressScale, { toValue: 0.96, useNativeDriver: true, damping: 20, stiffness: 400 }).start(),
+  []);
+  const onPressOut = useCallback(() =>
+    Animated.spring(pressScale, { toValue: 1, useNativeDriver: true, damping: 12, stiffness: 180 }).start(),
+  []);
+
   return (
-    <Pressable
-      style={({ pressed }) => [s.card, hasMatchingAllergens && s.cardDanger, pressed && { opacity: 0.9 }]}
-      onPress={() => router.push(`/${restIndex}/${dishIndex}`)}
-      accessibilityRole="button"
-      accessibilityLabel={dish.name}
-    >
-      <Image source={{ uri }} style={s.photo} resizeMode="cover" />
+    <Animated.View style={{ flex: 1, transform: [{ scale: pressScale }] }}>
+      <Pressable
+        style={[s.card, hasMatchingAllergens && s.cardDanger]}
+        onPressIn={onPressIn}
+        onPressOut={onPressOut}
+        onPress={() => router.push(`/${restIndex}/${dishIndex}`)}
+        accessibilityRole="button"
+        accessibilityLabel={dish.name}
+      >
+        <Image source={{ uri }} style={s.photo} resizeMode="cover" />
 
-      {quantity > 0 && (
-        <View style={s.quantityBadge}>
-          <Text style={s.quantityBadgeText}>{quantity}</Text>
-        </View>
-      )}
+        <Animated.View style={[s.quantityBadge, { transform: [{ scale: badgeScale }] }]}>
+          {quantity > 0 && <Text style={s.quantityBadgeText}>{quantity}</Text>}
+        </Animated.View>
 
-      <View style={s.content}>
-        <Text style={s.name}>{dish.name.toUpperCase()}</Text>
-        {dish.category ? <Text style={s.tagline}>{dish.category.toUpperCase()}</Text> : null}
-        <View style={s.rule} />
-        <AllergenLine contains={containsCount} may={mayCount} safe={isPersonalSafe} />
-        <View style={s.cardFooter}>
-          <Text style={s.price}>{price.toFixed(2)} €</Text>
-          {quantity === 0 ? (
-            <TouchableOpacity style={s.addBtn} onPress={(e) => { e.stopPropagation?.(); onAdd(); }} hitSlop={8}>
-              <Ionicons name="add" size={18} color={WHITE} />
-            </TouchableOpacity>
-          ) : (
-            <View style={s.qtyControls}>
-              <TouchableOpacity style={s.qtyBtn} onPress={(e) => { e.stopPropagation?.(); onDecrement(); }} hitSlop={8}>
-                <Ionicons name="remove" size={14} color={BLUE} />
+        <View style={s.content}>
+          <Text style={s.name}>{dish.name.toUpperCase()}</Text>
+          {dish.category ? <Text style={s.tagline}>{dish.category.toUpperCase()}</Text> : null}
+          <View style={s.rule} />
+          <AllergenLine contains={containsCount} may={mayCount} safe={isPersonalSafe} />
+          <View style={s.cardFooter}>
+            <Text style={s.price}>{price.toFixed(2)} €</Text>
+            {quantity === 0 ? (
+              <TouchableOpacity style={s.addBtn} onPress={(e) => { e.stopPropagation?.(); onAdd(); }} hitSlop={8}>
+                <Ionicons name="add" size={18} color={WHITE} />
               </TouchableOpacity>
-              <Text style={s.qtyText}>{quantity}</Text>
-              <TouchableOpacity style={[s.qtyBtn, s.qtyBtnFilled]} onPress={(e) => { e.stopPropagation?.(); onIncrement(); }} hitSlop={8}>
-                <Ionicons name="add" size={14} color={WHITE} />
-              </TouchableOpacity>
-            </View>
-          )}
+            ) : (
+              <View style={s.qtyControls}>
+                <TouchableOpacity style={s.qtyBtn} onPress={(e) => { e.stopPropagation?.(); onDecrement(); }} hitSlop={8}>
+                  <Ionicons name="remove" size={14} color={BLUE} />
+                </TouchableOpacity>
+                <Text style={s.qtyText}>{quantity}</Text>
+                <TouchableOpacity style={[s.qtyBtn, s.qtyBtnFilled]} onPress={(e) => { e.stopPropagation?.(); onIncrement(); }} hitSlop={8}>
+                  <Ionicons name="add" size={14} color={WHITE} />
+                </TouchableOpacity>
+              </View>
+            )}
+          </View>
         </View>
-      </View>
-    </Pressable>
+      </Pressable>
+    </Animated.View>
   );
 }
 
@@ -443,11 +478,25 @@ function CartModal({
   );
 
   // ── Step: Success ───────────────────────────────────────────────────────────
+  const successScale = useRef(new Animated.Value(0)).current;
+  const successOpacity = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    if (step === 'success') {
+      successScale.setValue(0.4);
+      successOpacity.setValue(0);
+      Animated.parallel([
+        Animated.spring(successScale, { toValue: 1, useNativeDriver: true, damping: 11, stiffness: 280 }),
+        Animated.timing(successOpacity, { toValue: 1, duration: 200, useNativeDriver: true }),
+      ]).start();
+    }
+  }, [step]);
+
   const renderSuccess = () => (
-    <View style={sm.successContainer}>
-      <View style={sm.successIcon}>
+    <Animated.View style={[sm.successContainer, { opacity: successOpacity }]}>
+      <Animated.View style={[sm.successIcon, { transform: [{ scale: successScale }] }]}>
         <Ionicons name="checkmark" size={40} color={WHITE} />
-      </View>
+      </Animated.View>
       <Text style={sm.successTitle}>Pedido enviado!</Text>
       <Text style={sm.successRef}>{orderRef}</Text>
       <Text style={sm.successSub}>
@@ -472,7 +521,7 @@ function CartModal({
       <TouchableOpacity style={[sm.primaryBtn, { marginTop: 24 }]} onPress={handleClose} activeOpacity={0.85}>
         <Text style={sm.primaryBtnText}>Fechar</Text>
       </TouchableOpacity>
-    </View>
+    </Animated.View>
   );
 
   return (
@@ -552,6 +601,17 @@ export default function H3Screen({ restIndex }: { restIndex: number }) {
   const removeFromCart = useCallback((idx: number) => setCart(prev => { const n = { ...prev }; delete n[idx]; return n; }), []);
   const clearCart      = useCallback(() => setCart({}), []);
 
+  const cartBarAnim = useRef(new Animated.Value(120)).current;
+  useEffect(() => {
+    Animated.spring(cartBarAnim, {
+      toValue: totalItems > 0 ? 0 : 120,
+      useNativeDriver: true,
+      damping: 18,
+      stiffness: 220,
+      mass: 0.9,
+    }).start();
+  }, [totalItems]);
+
   useEffect(() => {
     navigation.setOptions({
       headerStyle: { backgroundColor: WHITE },
@@ -624,16 +684,34 @@ export default function H3Screen({ restIndex }: { restIndex: number }) {
   const scrollTabToRef = useRef(scrollTabTo);
   useEffect(() => { scrollTabToRef.current = scrollTabTo; }, [scrollTabTo]);
 
-  const viewabilityConfig = useRef({ itemVisiblePercentThreshold: 30 });
-  const onViewableItemsChanged = useRef(({ viewableItems }: { viewableItems: Array<{ item: Row }> }) => {
-    if (isUserScrolling.current) return;
-    const firstHeader = viewableItems.find(v => v.item.type === 'header');
-    if (firstHeader) {
-      const cat = (firstHeader.item as { type: 'header'; category: string }).category;
-      setActiveCategory(cat);
-      scrollTabToRef.current(cat);
+  // Map row index → measured height, used to compute cumulative y-offsets
+  const rowHeights = useRef<Record<number, number>>({});
+  const activeCategoryRef = useRef('');
+  useEffect(() => { activeCategoryRef.current = activeCategory; }, [activeCategory]);
+
+  const getRowOffset = useCallback((targetIndex: number) => {
+    const PADDING_TOP = 8;
+    let offset = PADDING_TOP;
+    for (let i = 0; i < targetIndex; i++) {
+      offset += rowHeights.current[i] ?? 0;
     }
-  });
+    return offset;
+  }, []);
+
+  const handleScroll = useCallback((e: { nativeEvent: { contentOffset: { y: number } } }) => {
+    if (isUserScrolling.current) return;
+    const y = e.nativeEvent.contentOffset.y + 80;
+    let found = categories[0] ?? '';
+    for (const cat of categories) {
+      const offset = getRowOffset(categoryRowIndexes[cat]);
+      if (offset <= y) found = cat;
+    }
+    if (found && found !== activeCategoryRef.current) {
+      activeCategoryRef.current = found;
+      setActiveCategory(found);
+      scrollTabToRef.current(found);
+    }
+  }, [categories, categoryRowIndexes, getRowOffset]);
 
   if (!restaurant) return null;
 
@@ -688,12 +766,15 @@ export default function H3Screen({ restIndex }: { restIndex: number }) {
         ListFooterComponent={footer}
         showsVerticalScrollIndicator={false}
         onScrollToIndexFailed={() => {}}
-        onViewableItemsChanged={onViewableItemsChanged.current}
-        viewabilityConfig={viewabilityConfig.current}
-        renderItem={({ item }) => {
+        scrollEventThrottle={16}
+        onScroll={handleScroll}
+        renderItem={({ item, index }) => {
+          const recordHeight = (e: { nativeEvent: { layout: { height: number } } }) => {
+            rowHeights.current[index] = e.nativeEvent.layout.height;
+          };
           if (item.type === 'header') {
             return (
-              <View style={[s.categoryHeader, { paddingHorizontal: PAD }]}>
+              <View style={[s.categoryHeader, { paddingHorizontal: PAD }]} onLayout={recordHeight}>
                 <View style={s.categoryRule} />
                 <Text style={s.categoryLabel}>{item.category.toUpperCase()}</Text>
                 <View style={s.categoryRule} />
@@ -701,7 +782,7 @@ export default function H3Screen({ restIndex }: { restIndex: number }) {
             );
           }
           return (
-            <View style={[s.pair, { paddingHorizontal: PAD, gap: GAP, marginBottom: GAP }]}>
+            <View style={[s.pair, { paddingHorizontal: PAD, gap: GAP, marginBottom: GAP }]} onLayout={recordHeight}>
               {renderCard(item.left)}
               {item.right ? renderCard(item.right) : <View style={s.cardPlaceholder} />}
             </View>
@@ -710,15 +791,22 @@ export default function H3Screen({ restIndex }: { restIndex: number }) {
       />
 
       {/* Floating cart bar */}
-      {totalItems > 0 && (
-        <TouchableOpacity style={[s.cartBar, { bottom: insets.bottom + 12 }]} onPress={() => setCartOpen(true)} activeOpacity={0.9}>
+      <Animated.View
+        pointerEvents={totalItems > 0 ? 'auto' : 'none'}
+        style={[s.cartBar, { bottom: insets.bottom + 12, transform: [{ translateY: cartBarAnim }] }]}
+      >
+        <TouchableOpacity
+          style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}
+          onPress={() => setCartOpen(true)}
+          activeOpacity={0.9}
+        >
           <View style={s.cartBarBadge}>
             <Text style={s.cartBarBadgeText}>{totalItems}</Text>
           </View>
           <Text style={s.cartBarLabel}>Ver pedido</Text>
           <Text style={s.cartBarPrice}>{totalPrice.toFixed(2)} €</Text>
         </TouchableOpacity>
-      )}
+      </Animated.View>
 
       <CartModal
         visible={cartOpen}
