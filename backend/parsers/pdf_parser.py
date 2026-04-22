@@ -486,16 +486,37 @@ def _assign_allergen_by_x(
     return best_key if best_dist <= tolerance else None
 
 
+def _is_bold_word(word: dict) -> bool:
+    """Return True if the word's font indicates bold weight."""
+    fontname = (word.get("fontname") or "").lower()
+    return any(tag in fontname for tag in ("bold", "heavy", "black", "demi", "semibold"))
+
+
 def _parse_h3(pdf: pdfplumber.PDF, source_file: str) -> List[Dish]:
     dishes: List[Dish] = []
     current_category: Optional[str] = None
+
+    # Footnote patterns to skip entirely
+    _FOOTNOTES = {
+        "*exclusivo", "as informações", "não rejeitamos", "legenda",
+        "rejeitamos", "informações de alerg", "fornecedores",
+        "presumindo-se", "contaminações cruzadas", "tabela de alerg",
+    }
+
+    # Sub-category label words that reset category without being dishes
+    _SUBCATEGORY_LABELS = {
+        "limonadas", "chás", "cha", "outras", "outros",
+        "bebidas", "menus", "acompanhamentos", "sobremesas",
+        "menus no pão",
+    }
 
     for page in pdf.pages:
         x_to_key = _build_h3_x_col_map(page)
         if not x_to_key:
             continue
 
-        words = page.extract_words()
+        # Request fontname so we can distinguish dish names (bold) from ingredients
+        words = page.extract_words(extra_attrs=["fontname", "size"])
         if not words:
             continue
 
@@ -503,38 +524,26 @@ def _parse_h3(pdf: pdfplumber.PDF, source_file: str) -> List[Dish]:
         header_zone_y = page_height * 0.85
         content_words = [w for w in words if w["top"] < header_zone_y]
 
-        # Group words into rows by y-position (tolerance ±4px)
+        # Group words into rows by y-position (bucket to 4px)
         rows_by_y: Dict[float, List[dict]] = {}
         for w in content_words:
-            y = round(w["top"] / 4) * 4  # bucket to 4px
+            y = round(w["top"] / 4) * 4
             rows_by_y.setdefault(y, []).append(w)
 
-        # Sort rows by y
         sorted_ys = sorted(rows_by_y.keys())
 
-        # Find the x boundary of the dish-name column
-        # All dish/ingredient names appear at x0 < ~140
+        # Dish/ingredient names appear at x0 < ~140; markers (C/PC) are to the right
         NAME_X_MAX = 140.0
 
         current_dish: Optional[Dish] = None
 
-        # Footnote patterns to skip entirely
-        _FOOTNOTES = {
-            "*exclusivo", "as informações", "não rejeitamos", "legenda",
-            "rejeitamos", "informações de alerg", "fornecedores",
-            "presumindo-se", "contaminações cruzadas", "tabela de alerg",
-        }
-
         for y in sorted_ys:
             row_words = sorted(rows_by_y[y], key=lambda w: w["x0"])
 
-            # Name words: x0 < NAME_X_MAX
             name_words = [w for w in row_words if w["x0"] < NAME_X_MAX]
-            # Marker words: x0 >= NAME_X_MAX and text is C or PC
             marker_words = [
                 w for w in row_words
-                if w["x0"] >= NAME_X_MAX
-                and w["text"].upper() in {"C", "PC"}
+                if w["x0"] >= NAME_X_MAX and w["text"].upper() in {"C", "PC"}
             ]
 
             if not name_words and not marker_words:
@@ -542,13 +551,13 @@ def _parse_h3(pdf: pdfplumber.PDF, source_file: str) -> List[Dish]:
 
             name = " ".join(w["text"] for w in name_words).strip()
 
-            # Skip footnotes and page numbers
+            # Skip footnotes and page artefacts
             if any(fn in name.lower() for fn in _FOOTNOTES):
                 continue
             if name.startswith("*") or re.match(r"^\*|^Página|^TABELA DE", name):
                 continue
 
-            # Section header?
+            # Section header (ALL-CAPS)
             if name and _is_section_header(name):
                 if current_dish is not None:
                     dishes.append(current_dish)
@@ -556,22 +565,17 @@ def _parse_h3(pdf: pdfplumber.PDF, source_file: str) -> List[Dish]:
                 current_category = name.title()
                 continue
 
-            # Sub-category headers like "Limonadas", "Chás", "Outras"
-            # (title-case, no markers, no following dish)
             name_lower = name.lower().strip()
-            if not marker_words and name_lower in {
-                "limonadas", "chás", "cha", "chás", "outras", "outros",
-                "bebidas", "menus", "acompanhamentos", "sobremesas",
-                "menus no pão",
-            }:
+
+            # Sub-category labels: reset category, not a dish
+            if not marker_words and name_lower in _SUBCATEGORY_LABELS:
                 if current_dish is not None:
                     dishes.append(current_dish)
                     current_dish = None
                 current_category = name.title()
                 continue
 
-            # "s/ alergénios" = no allergens, skip
-            if "s/ alergénios" in name.lower():
+            if "s/ alergénios" in name_lower:
                 continue
 
             # Extract allergens from marker words
@@ -586,50 +590,59 @@ def _parse_h3(pdf: pdfplumber.PDF, source_file: str) -> List[Dish]:
                 allergens.append(_make_presence(key, ptype))
 
             if not name:
-                # Pure marker row with no name — merge into current dish
+                # Pure marker row — merge into current dish
                 if current_dish is not None:
                     current_dish.allergens = _merge(current_dish.allergens, allergens)
                 continue
 
-            # Is this a sub-component row?
-            name_lower = name.lower().strip()
-            is_sub = (
-                name_lower in _H3_SUBCOMPONENTS
-                or name_lower.startswith((
-                    "molho", "pão ", "ovo ", "bacon", "alface",
-                    "tomate", "cebol", "espinafr", "parmes",
-                    "rúcul", "tomate seco", "hambúrguer", "hamburguer",
-                    "ketchup", "mostarda amarela", "crocante", "vinagreta",
-                    "vinagrete", "arroz", "gelado", "topping", "bolacha",
-                    "suspiro", "croquetes de",
-                ))
-                or (name and name[0].islower() and name_lower not in {
-                    "s/ alergénios"
-                })
-            )
+            # ----------------------------------------------------------------
+            # Determine if this row is a sub-component (ingredient) or a dish.
+            #
+            # Primary signal: bold font → dish name.
+            # H3 PDFs consistently render dish names in bold and ingredient
+            # rows in a lighter weight. Fallback to the explicit set and
+            # startswith heuristics only when font info is unavailable.
+            # ----------------------------------------------------------------
+            row_has_bold = any(_is_bold_word(w) for w in name_words)
+            fonts_available = any(w.get("fontname") for w in name_words)
+
+            if fonts_available:
+                is_sub = not row_has_bold
+            else:
+                # No font info — fall back to heuristics
+                is_sub = (
+                    name_lower in _H3_SUBCOMPONENTS
+                    or name_lower.startswith((
+                        "molho", "pão ", "ovo ", "bacon", "alface",
+                        "tomate", "cebol", "espinafr", "parmes",
+                        "rúcul", "tomate seco", "hambúrguer", "hamburguer",
+                        "ketchup", "mostarda amarela", "crocante", "vinagreta",
+                        "vinagrete", "arroz", "gelado", "topping", "bolacha",
+                        "suspiro", "croquetes de",
+                    ))
+                    or (name and name[0].islower())
+                )
 
             if is_sub:
                 if current_dish is not None:
-                    # Only add as ingredient if it looks like a real ingredient name
                     is_valid_ing = (
                         name
                         and name_lower not in {"s/ alergénios"}
                         and not any(fn in name_lower for fn in _FOOTNOTES)
                         and not name.startswith("*")
-                        and len(name) < 80  # skip footnote sentences
+                        and len(name) < 80
                     )
                     if is_valid_ing:
                         current_dish.ingredients.append(name)
                     current_dish.allergens = _merge(current_dish.allergens, allergens)
                 else:
-                    # Orphan sub row, treat as standalone
-                    if name:
-                        current_dish = Dish(
-                            name=name,
-                            category=current_category,
-                            source_file=source_file,
-                            allergens=allergens,
-                        )
+                    # Orphan ingredient with no parent dish — promote to dish
+                    current_dish = Dish(
+                        name=name,
+                        category=current_category,
+                        source_file=source_file,
+                        allergens=allergens,
+                    )
             else:
                 # New dish
                 if current_dish is not None:

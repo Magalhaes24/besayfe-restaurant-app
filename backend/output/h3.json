@@ -1,13 +1,14 @@
 {
   "name": "H3",
   "source_file": "tabela_h3.pdf",
-  "total_dishes": 42,
+  "total_dishes": 37,
   "dishes": [
     {
       "name": "Grelhado",
       "category": "Menus",
       "ingredients": [
-        "Hambúrguer"
+        "Hambúrguer",
+        "Limão"
       ],
       "contains_allergens": [
         {
@@ -25,13 +26,6 @@
           "detail": null
         }
       ]
-    },
-    {
-      "name": "Limão",
-      "category": "Menus",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
     },
     {
       "name": "Com molho",
@@ -69,7 +63,9 @@
       "ingredients": [
         "Hambúrguer",
         "Molho tuga",
-        "Ovo estrelado"
+        "Ovo estrelado",
+        "Dente de alho",
+        "Louro"
       ],
       "contains_allergens": [
         {
@@ -99,20 +95,6 @@
           "detail": null
         }
       ]
-    },
-    {
-      "name": "Dente de alho",
-      "category": "Menus",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Louro",
-      "category": "Menus",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
     },
     {
       "name": "Champignon",
@@ -1149,9 +1131,7 @@
     {
       "name": "Arroz Thai",
       "category": "Acompanhamentos",
-      "ingredients": [
-        "Batatas"
-      ],
+      "ingredients": [],
       "contains_allergens": [
         {
           "key": "milk",
@@ -1163,13 +1143,18 @@
       "may_contain_allergens": []
     },
     {
+      "name": "Batatas",
+      "category": "Acompanhamentos",
+      "ingredients": [],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
       "name": "Salada c/ vinagreta h3",
       "category": "Acompanhamentos",
       "ingredients": [
         "Alface, tomate e cebola roxa",
-        "Vinagreta h3",
-        "Esparregado",
-        "Pão de Mafra"
+        "Vinagreta h3"
       ],
       "contains_allergens": [
         {
@@ -1182,6 +1167,20 @@
           "key": "mustard",
           "name_pt": "Mostarda",
           "name_en": "Mustard",
+          "detail": null
+        }
+      ],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Esparregado",
+      "category": "Acompanhamentos",
+      "ingredients": [],
+      "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
           "detail": null
         },
         {
@@ -1229,6 +1228,12 @@
           "detail": null
         },
         {
+          "key": "mustard",
+          "name_pt": "Mostarda",
+          "name_en": "Mustard",
+          "detail": null
+        },
+        {
           "key": "sesame",
           "name_pt": "Sésamo",
           "name_en": "Sesame",
@@ -1237,50 +1242,8 @@
       ]
     },
     {
-      "name": "Limonada de limão",
-      "category": "Limonadas",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Limonada de morango",
-      "category": "Limonadas",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Limonada de maracujá",
-      "category": "Limonadas",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Limonada de romã",
-      "category": "Limonadas",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Chá preto",
-      "category": "Chás",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Chá de limão",
-      "category": "Chás",
-      "ingredients": [],
-      "contains_allergens": [],
-      "may_contain_allergens": []
-    },
-    {
-      "name": "Cerveja",
-      "category": "Outras",
+      "name": "Pão de Mafra",
+      "category": "Acompanhamentos",
       "ingredients": [],
       "contains_allergens": [
         {
@@ -1293,10 +1256,38 @@
       "may_contain_allergens": []
     },
     {
-      "name": "Vinho",
+      "name": "Limonada de limão",
+      "category": "Limonadas",
+      "ingredients": [
+        "Limonada de morango",
+        "Limonada de maracujá",
+        "Limonada de romã"
+      ],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Chá preto",
+      "category": "Chás",
+      "ingredients": [
+        "Chá de limão"
+      ],
+      "contains_allergens": [],
+      "may_contain_allergens": []
+    },
+    {
+      "name": "Cerveja",
       "category": "Outras",
-      "ingredients": [],
+      "ingredients": [
+        "Vinho"
+      ],
       "contains_allergens": [
+        {
+          "key": "gluten",
+          "name_pt": "Glúten",
+          "name_en": "Gluten",
+          "detail": null
+        },
         {
           "key": "sulphites",
           "name_pt": "Sulfitos",
